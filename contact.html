@@ -5,14 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- <link href="./src/output.css" rel="stylesheet">  -->
+    <style>
+      .announcement {
+          overflow: hidden;
+          white-space: nowrap;
+        }
+        .announcement span {
+          display: inline-block;
+          padding-left: 100%;
+          animation: scroll 20s linear infinite;
+        }
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+    </style>
 </head>
 <body>
-    <!-- nav bar section -->
-    <nav
-      class="bg-green-100 flex items-center justify-between p-3 shadow-xl sticky top-0 z-1"
-    >
-      <h1 class="text-2xl">Greenden</h1>
+    <!-- Nav Bar Section -->
+    <nav class=" sticky top-0 z-1 flex-col ">
+      <!-- Announcement section -->
+      <div class="announcement bg-[#93103A] text-white">
+        <span>
+          <h4 class="inline">⚡ DIWALI SALE IS LIVE NOW</h4>
+          <h4 class="inline pl-10">⚡ DIWALI SALE IS LIVE NOW</h4>
+          <h4 class="inline pl-10">⚡ DIWALI SALE IS LIVE NOW</h4>
+          <h4 class="inline pl-10">⚡ DIWALI SALE IS LIVE NOW</h4>
+          <h4 class="inline pl-10">⚡ DIWALI SALE IS LIVE NOW</h4>
+          <h4 class="inline pl-10">⚡ DIWALI SALE IS LIVE NOW</h4>
+          <h4 class="inline pl-10">⚡ DIWALI SALE IS LIVE NOW</h4>
+        </span>
+      </div>
+      <!-- Menu Section -->
+      <div class="bg-[#FCF0D7] flex items-center justify-between p-3 shadow-xl">
+        <h1 class="text-2xl">Greenden</h1>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -34,31 +64,37 @@
         </li>
 
         <li>
-          <a href="products.html" class="hover:underline hover:text-black">Products</a>
+          <a href="products.html" class="hover:underline hover:text-black"
+            >Products</a
+          >
         </li>
 
         <li>
-          <a href="contact.html" class="hover:underline hover:text-black">Contact</a>
+          <a href="contact.html" class="hover:underline hover:text-black"
+            >Contact</a
+          >
         </li>
       </ul>
+      </div>
+      
     </nav>
 
-    <section class="bg-white">
+    <section class="bg-[#FCF0D7]">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Contact Us</h2>
             <form action="#" class="space-y-8">
                 <div>
                     <label for="email" class="block mb-2 text-sm font-medium text-black  ">Your email</label>
-                    <input type="email" id="email" class="outline-gray-400 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:border-gray-200 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                    <input type="email" id="email" class="outline-gray-400 bg-transparent shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:border-gray-200 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
                 </div>
                 <div>
                     <label for="subject" class="block mb-2 text-sm font-medium text-black">Subject</label>
-                    <input type="text" id="subject" class="outline-gray-400 block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  dark:border-gray-200 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                    <input type="text" id="subject" class="outline-gray-400 bg-transparent block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  dark:border-gray-200 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
                 </div>
                 <div class="sm:col-span-2">
                     <label for="message" class="block mb-2 text-sm font-medium text-black">Your message</label>
-                    <textarea id="message" rows="6" class="outline-gray-400  resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:border-gray-200 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                    <textarea id="message" rows="6" class="outline-gray-400 bg-transparent resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:border-gray-200 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
                 </div>
                 <button class="border border-gray-200 hover:border-gray-600 hover:shadow-2xl rounded-2xl p-1.5">Send message</button>
             </form>
@@ -66,10 +102,183 @@
       </section>
 
     <!-- Footer Section -->
-        <div class="p-5 bg-green-100 mt-2">
-          <h1 class="m-5 text-4xl font-bold">Greenden</h1>
-          <p class="m-5">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
-          <p class="m-5">&copy;2026 Greenday.com</p>
+            <div class="p-5 bg-[#93103A] text-white">
+      <div class="md:flex md:flex-row md:items-center md:justify-around mb-3">
+        <div class="flex flex-col items-center justify-center">
+          <svg
+            class="matrixIcon"
+            width="57"
+            height="56"
+            viewBox="0 0 57 56"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M43.6663 19H38.333C37.2284 19 36.333 19.8954 36.333 21V41H39.433C39.8963 38.7178 41.9141 37 44.333 37C46.752 37 48.7697 38.7178 49.233 41H50.333C51.4376 41 52.333 40.1046 52.333 39V30.625C52.333 30.218 52.2089 29.8208 51.9771 29.4862L45.3105 19.8612C44.9369 19.3218 44.3225 19 43.6663 19ZM42.6032 22H40.333C39.7807 22 39.333 22.4477 39.333 23V27C39.333 27.5523 39.7807 28 40.333 28H43.9997H45.3495C45.8927 28 46.333 27.5597 46.333 27.0165C46.333 26.8196 46.2739 26.6272 46.1633 26.4642L43.4306 22.4384C43.2445 22.1642 42.9346 22 42.6032 22Z"
+              fill="#FFA730"
+            ></path>
+            <circle
+              cx="44.333"
+              cy="42"
+              r="3.2"
+              fill="#1A181E"
+              stroke="#FFC34C"
+              stroke-width="1.6"
+            ></circle>
+            <path
+              d="M20.533 42C20.533 43.7673 19.1003 45.2 17.333 45.2C15.5657 45.2 14.133 43.7673 14.133 42C14.133 40.2327 15.5657 38.8 17.333 38.8C19.1003 38.8 20.533 40.2327 20.533 42Z"
+              fill="#1A181E"
+              stroke="#FFC34C"
+              stroke-width="1.6"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.33301 10C7.78072 10 7.33301 10.4477 7.33301 11V40C7.33301 40.5523 7.78072 41 8.33301 41H12.433C12.8963 38.7178 14.9141 37 17.333 37C19.752 37 21.7697 38.7178 22.233 41H34.333V14C34.333 11.7909 32.5421 10 30.333 10H8.33301Z"
+              fill="#FF4B34"
+            ></path>
+            <line
+              x1="8.33301"
+              y1="34.2"
+              x2="34.333"
+              y2="34.2"
+              stroke="#CC3C2A"
+              stroke-width="1.6"
+            ></line>
+            <line
+              x1="36.333"
+              y1="34.2"
+              x2="52.333"
+              y2="34.2"
+              stroke="#D78B26"
+              stroke-width="1.6"
+            ></line>
+            <line
+              x1="5.13301"
+              y1="26.2"
+              x2="17.533"
+              y2="26.2"
+              stroke="white"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            ></line>
+            <line
+              x1="10.133"
+              y1="19.2"
+              x2="20.533"
+              y2="19.2"
+              stroke="white"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            ></line>
+          </svg>
+          <h3>Free delivery (Above ₹5,000)</h3>
+          <p>Deliver happens within: 1-2 days</p>
         </div>
+        <div class="flex flex-col items-center justify-center">
+          <svg class="matrixIcon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 27H20C18.8954 27 18 27.8954 18 29V48C18 49.1046 18.8954 50 20 50H50C51.1046 50 52 49.1046 52 48V29C52 27.8954 51.1046 27 50 27Z" fill="#FF4B34"></path>
+              <g opacity="0.2">
+                <path opacity="0.8" d="M52 31.5H18V35.5H52V31.5Z" fill="black"></path>
+              </g>
+              <path d="M31.7128 7L5.73205 22C4.77547 22.5523 4.44772 23.7755 5 24.7321L15 42.0526C15.5523 43.0091 16.7755 43.3369 17.7321 42.7846L43.7128 27.7846C44.6694 27.2323 44.9971 26.0091 44.4449 25.0526L34.4449 7.73205C33.8926 6.77547 32.6694 6.44772 31.7128 7Z" fill="#FFA730"></path>
+              <path d="M33.7035 7.94824L5.55772 24.1982C5.199 24.4053 5.0761 24.864 5.2832 25.2228C5.49031 25.5815 5.949 25.7044 6.30772 25.4973L34.4535 9.24728C34.8123 9.04017 34.9352 8.58148 34.7281 8.22276C34.521 7.86404 34.0623 7.74114 33.7035 7.94824Z" fill="#CD8424"></path>
+              <path d="M43.2153 24.4229L15.0694 40.6729C14.7107 40.88 14.5878 41.3387 14.7949 41.6974C15.002 42.0561 15.4607 42.179 15.8194 41.9719L43.9653 25.7219C44.324 25.5148 44.4469 25.0561 44.2398 24.6974C44.0327 24.3387 43.574 24.2157 43.2153 24.4229Z" fill="#CD8424"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M28.1526 30.8415C28.9351 30.3908 29.6209 29.7904 30.1711 29.0744C30.7213 28.3584 31.1251 27.541 31.3591 26.6689C31.5932 25.7968 31.6532 24.8871 31.5354 23.9919C31.4176 23.0966 31.1243 22.2332 30.6726 21.4514C30.221 20.6685 29.6194 19.9824 28.9026 19.4321C28.1857 18.8817 27.3678 18.4781 26.4949 18.2441C25.6219 18.0101 24.7112 17.9503 23.8152 18.0683C22.9192 18.1862 22.0553 18.4794 21.2727 18.9313C20.4899 19.3829 19.8035 19.9845 19.2532 20.7014C18.7028 21.4182 18.2992 22.2364 18.0652 23.1093C17.8312 23.9822 17.7714 24.8927 17.8894 25.7888C18.0073 26.6848 18.3007 27.5489 18.7527 28.3315C19.6664 29.9108 21.17 31.0624 22.9328 31.5331C24.6957 32.0038 26.5732 31.7551 28.1526 30.8415ZM28.8425 32.0414C30.7348 30.9422 32.1135 29.137 32.676 27.0222C33.2385 24.9073 32.9387 22.6555 31.8425 20.7614C30.7433 18.8691 28.9384 17.4904 26.8235 16.9279C24.7086 16.3654 22.4568 16.6652 20.5627 17.7614C18.6711 18.8587 17.2923 20.6623 16.7297 22.7756C16.1672 24.8888 16.467 27.1389 17.5627 29.0314C18.6653 30.9204 20.472 32.2948 22.5867 32.8535C24.7013 33.4121 26.9509 33.1093 28.8425 32.0114V32.0414Z" fill="#CD8424"></path>
+              <circle cx="24.7031" cy="24.8896" r="3" fill="white"></circle>
+            </svg>
+          <h3>Payment options</h3>
+          <p>Cash on delivery and online payment</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <svg class="matrixIcon" width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M45.566 26.2C46.6154 26.2 47.466 27.0507 47.466 28.1V39.0379C47.466 40.6396 46.1676 41.9379 44.566 41.9379H43.8865C42.7267 41.9379 41.7865 42.8781 41.7865 44.0379V46.4085L38.0169 42.5671C37.622 42.1647 37.0819 41.9379 36.5181 41.9379H31.566C30.5167 41.9379 29.666 41.0873 29.666 40.0379V36.6C29.666 35.9925 29.1735 35.5 28.566 35.5C27.9585 35.5 27.466 35.9925 27.466 36.6V40.0379C27.466 42.3023 29.3016 44.1379 31.566 44.1379H36.4761L40.3877 48.124C41.7047 49.4662 43.9865 48.5337 43.9865 46.6532V44.1379H44.566C47.3827 44.1379 49.666 41.8546 49.666 39.0379V28.1C49.666 25.8356 47.8304 24 45.566 24H41.1429C40.5354 24 40.0429 24.4925 40.0429 25.1C40.0429 25.7075 40.5354 26.2 41.1429 26.2H45.566Z" fill="#FFA730"></path>
+              <path d="M7.66602 13.1C7.66602 10.2833 9.94936 8 12.766 8H35.766C38.5827 8 40.866 10.2833 40.866 13.1V31.5039C40.866 34.3205 38.5827 36.6038 35.766 36.6038H25.164L18.2702 43.4976C16.9472 44.8206 14.6852 43.8836 14.6852 42.0127V36.6038H12.766C9.94937 36.6038 7.66602 34.3205 7.66602 31.5038V13.1Z" fill="#FF4B34"></path>
+              <path d="M23.7383 26.2949C24.5 26.2949 24.8516 25.8027 24.9102 25.0527C24.9688 23.9043 25.3672 23.3066 26.8789 22.416C28.4258 21.4902 29.3398 20.248 29.3398 18.4316C29.3398 15.8418 27.2188 14.0488 24.1602 14.0488C21.8164 14.0488 20.0352 15.0332 19.3203 16.6504C19.1094 17.1074 19.0039 17.5176 19.0039 18.0215C19.0039 18.7363 19.4141 19.1699 20.1406 19.1699C20.7266 19.1699 21.0898 18.9121 21.3242 18.1855C21.6992 16.9082 22.6367 16.2051 24.0547 16.2051C25.6133 16.2051 26.6797 17.1543 26.6797 18.5371C26.6797 19.6855 26.1758 20.3887 24.7578 21.2441C23.2344 22.1582 22.5078 23.1543 22.5078 24.6543V24.9238C22.5078 25.6973 22.918 26.2949 23.7383 26.2949ZM23.7383 31.2754C24.6172 31.2754 25.2852 30.6191 25.2852 29.7637C25.2852 28.9082 24.6172 28.252 23.7383 28.252C22.8828 28.252 22.2031 28.9082 22.2031 29.7637C22.2031 30.6191 22.8828 31.2754 23.7383 31.2754Z" fill="white"></path>
+              <path d="M37.7656 19.5V31.5C37.7656 32.6046 36.8702 33.5 35.7656 33.5H30.2656" stroke="#FF624B" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M45.666 36V38C45.666 39.1046 44.7706 40 43.666 40H43.166" stroke="#FFC34C" stroke-width="1.5" stroke-linecap="round"></path>
+              <circle cx="11.166" cy="31.5" r="1.5" fill="#FF624B"></circle>
+              <circle cx="12.666" cy="29" r="1" fill="#FF624B"></circle>
+            </svg>
+          <h3>Customer Support</h3>
+          <p>support@myowngarden.com</p>
+        </div>
+        
+  </div>
+  <hr>
+<!-- ========= -->
+
+
+<div class="text-center m-5">
+        <p style="text-transform: uppercase;">
+          Store details
+        </p>
+        <h3>
+          MyOwnGarden® Agri Products
+        </h3>
+        <p>
+          MyOwnGarden® - No.4/467, E14, BHEL Nagar, Medavakkam, Chennai, Tamil Nadu 600100, India - 9952201069 / 9952994280
+        </p>
+      </div>
+
+
+
+<!-- ========= -->
+<div class="matrixSocials">
+        <p class="mb-3 matrixSocialText matrixStoreTitle text-center mt-5" style="text-transform: uppercase;">
+          Follow us
+        </p>
+        <div class="matrixLinks flex flex-row gap-5 justify-center mb-5">
+          
+          <a class="matrixLink" href="https://facebook.com/myowngardenn" rel="noopener noreferrer" target="_blank">
+            <svg class="matrixSocialIcon" color="white" id="facebook" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.5 12C22.5 6.19875 17.8013 1.5 12 1.5C6.19875 1.5 1.5 6.19875 1.5 12C1.5 17.2412 5.34125 21.5812 10.355 22.3687V15.0275H7.695V12H10.3638V9.69C10.3638 7.05625 11.93 5.60375 14.3275 5.60375C15.4738 5.60375 16.6813 5.805 16.6813 5.805V8.38625H15.36C14.0563 8.38625 13.645 9.2 13.645 10.0225V12H16.5587L16.095 15.0362H13.645V22.3775C18.6588 21.5812 22.5 17.2412 22.5 12Z" fill="currentColor"></path>
+            </svg>
+          </a>
+          
+          
+          <a class="matrixLink" href="https://twitter.com/myowngardenn" rel="noopener noreferrer" target="_blank">
+            <svg class="matrixSocialIcon" color="white" id="twitter" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M20.6891 7.5499C20.7025 7.7424 20.7025 7.9349 20.7025 8.12917C20.7025 14.0488 16.196 20.8759 7.95576 20.8759V20.8723C5.52157 20.8759 3.13794 20.1786 1.08875 18.8639C1.4427 18.9065 1.79842 18.9278 2.15504 18.9287C4.17229 18.9305 6.13189 18.2536 7.71891 17.0072C5.80189 16.9709 4.12084 15.7209 3.53358 13.8962C4.20512 14.0257 4.89705 13.9991 5.55616 13.819C3.46616 13.3968 1.96254 11.5605 1.96254 9.42788C1.96254 9.40837 1.96254 9.38974 1.96254 9.37111C2.58528 9.71797 3.28254 9.91046 3.99576 9.93176C2.02729 8.61619 1.42052 5.99748 2.60923 3.95006C4.88374 6.74885 8.23963 8.4503 11.8421 8.63038C11.4811 7.07442 11.9743 5.44393 13.1382 4.35014C14.9425 2.65401 17.7804 2.74095 19.4765 4.54442C20.4798 4.34659 21.4414 3.97845 22.3214 3.45684C21.987 4.49385 21.2871 5.37474 20.3521 5.9345C21.24 5.82982 22.1076 5.59208 22.9246 5.22925C22.3232 6.13055 21.5656 6.91563 20.6891 7.5499Z"></path>
+            </svg>
+          </a>
+          
+          
+          <a class="matrixLink" href="https://pinterest.com/myowngarden1" rel="noopener noreferrer" target="_blank">
+            <svg class="matrixSocialIcon" color="white" id="pinterest" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M21.9957 12.2929C22.1589 6.5864 17.5398 1.91811 11.851 2.00084C6.37576 2.08046 1.95828 6.60225 2.00017 12.0779C2.03024 16.0015 4.32008 19.3869 7.63229 20.9976C7.82388 21.0907 8.04568 20.9459 8.03768 20.7329C8.01353 20.0896 8.03434 19.4017 8.16308 18.8488C8.28979 18.3044 8.78698 16.1991 9.11387 14.816C9.27297 14.1427 9.29217 13.4436 9.16406 12.7637C9.12201 12.5405 9.09156 12.2784 9.09156 11.9872C9.09156 10.5092 9.94822 9.40568 11.0149 9.40568C11.9218 9.40568 12.3598 10.0866 12.3598 10.903C12.3598 11.815 11.7791 13.1785 11.4795 14.4421C11.229 15.5001 12.0101 16.3629 13.0535 16.3629C14.9428 16.3629 16.395 14.3708 16.395 11.4953C16.395 8.95034 14.5662 7.17087 11.955 7.17087C8.93057 7.17087 7.15532 9.43938 7.15532 11.7838C7.15532 12.6973 7.50728 13.677 7.94637 14.2095C8.03317 14.3148 8.04597 14.4071 8.02013 14.5144C7.93944 14.8502 7.76011 15.5722 7.72491 15.7199C7.6785 15.9145 7.57085 15.9557 7.36946 15.8621C6.0418 15.2441 5.21185 13.3032 5.21185 11.7442C5.21185 8.39108 7.64805 5.31183 12.2351 5.31183C15.9225 5.31183 18.788 7.93933 18.788 11.4509C18.788 15.1142 16.4782 18.0624 13.2722 18.0624C12.425 18.0624 11.6177 17.7162 11.143 17.2468C10.9971 17.1024 10.7503 17.1681 10.6982 17.3667C10.531 18.0036 10.2609 19.0337 10.1738 19.3687C10.0171 19.9714 9.6868 20.6734 9.3557 21.2847C9.26773 21.4471 9.35672 21.6478 9.5358 21.6932C10.3532 21.9005 11.2106 22.0075 12.0944 21.9993C17.3417 21.9506 21.8457 17.5384 21.9957 12.2929Z"></path>
+            </svg>
+          </a>
+          
+          
+          <a class="matrixLink" href="https://youtube.com/channel/UCl7Hi33HQgFFh_wrO6aAOdA" rel="noopener noreferrer" target="_blank">
+            <svg class="matrixSocialIcon" id="youtube" width="24" height="24" viewBox="0 0 24 24" color="white" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8382 5.15941C22.1789 5.51057 22.4208 5.94541 22.5396 6.42C22.8568 8.1787 23.0108 9.96295 22.9996 11.75C23.0059 13.5103 22.852 15.2676 22.5396 17C22.4208 17.4746 22.1789 17.9094 21.8382 18.2606C21.4976 18.6118 21.0703 18.8668 20.5996 19C18.8796 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 5.1196 19.46 3.3996 19C2.93842 18.8738 2.51758 18.6308 2.17774 18.2945C1.8379 17.9581 1.59055 17.5398 1.4596 17.08C1.14236 15.3213 0.988374 13.537 0.999595 11.75C0.990831 9.97631 1.14481 8.20556 1.4596 6.46C1.57838 5.98541 1.82031 5.55057 2.16094 5.19941C2.50157 4.84824 2.92884 4.59318 3.3996 4.46C5.1196 4 11.9996 4 11.9996 4C11.9996 4 18.8796 4 20.5996 4.42C21.0703 4.55318 21.4976 4.80824 21.8382 5.15941ZM9.74298 15.1859C9.40971 15.3715 8.99963 15.1306 8.99963 14.7491V8.65094C8.99963 8.26943 9.40971 8.02847 9.74298 8.21416L15.2157 11.2632C15.5579 11.4539 15.5579 11.9461 15.2157 12.1368L9.74298 15.1859Z" fill="currentColor"></path>
+            </svg>
+          </a>
+          
+          
+          <a class="matrixLink" href="https://instagram.com/myowngarden_" rel="noopener noreferrer" target="_blank">
+            <svg class="matrixSocialIcon" color="white" id="instagram" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7C2 4.23858 4.23858 2 7 2ZM16.65 6.49999C16.65 6.03055 17.0306 5.64999 17.5 5.64999H17.51C17.9795 5.64999 18.36 6.03055 18.36 6.49999C18.36 6.96944 17.9795 7.34999 17.51 7.34999H17.5C17.0306 7.34999 16.65 6.96944 16.65 6.49999ZM12.5127 8.79134C11.8469 8.69261 11.1669 8.80633 10.5695 9.11633C9.97203 9.42633 9.48755 9.91682 9.18494 10.518C8.88233 11.1193 8.777 11.8006 8.88393 12.4651C8.99086 13.1296 9.30461 13.7435 9.78055 14.2195C10.2565 14.6954 10.8704 15.0092 11.5349 15.1161C12.1994 15.223 12.8808 15.1177 13.482 14.8151C14.0832 14.5125 14.5737 14.028 14.8837 13.4306C15.1937 12.8331 15.3074 12.1531 15.2087 11.4873C15.108 10.8082 14.7915 10.1795 14.306 9.69399C13.8206 9.20851 13.1918 8.89205 12.5127 8.79134ZM9.83255 7.69614C10.7287 7.23114 11.7487 7.06055 12.7474 7.20865C13.7661 7.35971 14.7092 7.8344 15.4374 8.56262C16.1656 9.29083 16.6403 10.2339 16.7914 11.2526C16.9395 12.2513 16.7689 13.2713 16.3039 14.1675C15.8389 15.0636 15.1031 15.7903 14.2013 16.2443C13.2995 16.6982 12.2775 16.8562 11.2807 16.6958C10.2839 16.5354 9.36308 16.0647 8.64918 15.3508C7.93527 14.6369 7.46465 13.7161 7.30425 12.7193C7.14386 11.7225 7.30185 10.7005 7.75576 9.7987C8.20968 8.89687 8.9364 8.16114 9.83255 7.69614Z" fill="currentColor"></path>
+            </svg>
+          </a>
+          
+          
+          <a class="matrixLink" href="https://linktr.ee/myowngarden" rel="noopener noreferrer" target="_blank">
+            <svg class=" matrixSocialIcon" color="white" id="linkedin" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.1909 2H3.80909C2.80909 2 2 2.80909 2 3.80909V20.1909C2 21.1909 2.80909 22 3.80909 22H20.1909C21.1909 22 22 21.1909 22 20.1909V3.80909C22 2.80909 21.1909 2 20.1909 2ZM8.19091 19.2727C8.19091 19.5636 7.95455 19.8 7.66364 19.8H5.41818C5.12727 19.8 4.89091 19.5636 4.89091 19.2727V9.87273C4.89091 9.58182 5.12727 9.34545 5.41818 9.34545H7.66364C7.95455 9.34545 8.19091 9.58182 8.19091 9.87273V19.2727ZM6.54545 8.46364C5.37273 8.46364 4.41818 7.50909 4.41818 6.33636C4.41818 5.16364 5.36364 4.2 6.54545 4.2C7.72727 4.2 8.67273 5.15455 8.67273 6.32727C8.67273 7.5 7.71818 8.46364 6.54545 8.46364ZM19.9 19.3091C19.9 19.5727 19.6818 19.7909 19.4182 19.7909H17.0091C16.7455 19.7909 16.5273 19.5727 16.5273 19.3091V14.9091C16.5273 14.2545 16.7182 12.0273 14.8091 12.0273C13.3273 12.0273 13.0273 13.5455 12.9636 14.2364V19.3182C12.9636 19.5818 12.7455 19.8 12.4818 19.8H10.1545C9.89091 19.8 9.67273 19.5818 9.67273 19.3182V9.83636C9.67273 9.57273 9.89091 9.35455 10.1545 9.35455H12.4818C12.7455 9.35455 12.9636 9.57273 12.9636 9.83636V10.6545C13.5091 9.82727 14.3273 9.19091 16.0727 9.19091C19.9273 9.19091 19.9 12.7909 19.9 14.7636V19.3091Z" fill="currentColor"></path>
+            </svg>
+            
+          </a>
+          
+        </div>
+      </div>
+
+  <h1 class="m-5 text-4xl font-bold">Greenden</h1>
+  <p class="m-5">&copy;2026 Greenday.com</p>
+</div>
 </body>
 </html>
